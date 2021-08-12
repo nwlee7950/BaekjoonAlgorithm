@@ -1,4 +1,6 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 	static int N;
@@ -13,7 +15,7 @@ public class Main {
 			sb.append("\n");	
 			return;
 		}
-		for(int i=start; i<=N; i++) {
+		for(int i=1; i<=N; i++) {
 			arr[idx] = i;
 			solve(idx + 1, i);
 		}
